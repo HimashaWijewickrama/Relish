@@ -127,14 +127,14 @@ export const heroSlides = [
         subtitle: "Experience the art of fine dining like never before.",
         bg: "/images/hero/slide2.jpg",
     },
+    // {
+    //     id: 3,
+    //     title: "Fresh Every Day",
+    //     subtitle: "Farm-to-table ingredients, delivered to your plate.",
+    //     bg: "/images/hero/slide3.jpg",
+    // },
     {
         id: 3,
-        title: "Fresh Every Day",
-        subtitle: "Farm-to-table ingredients, delivered to your plate.",
-        bg: "/images/hero/slide3.jpg",
-    },
-    {
-        id: 4,
         title: "Unforgettable Flavors",
         subtitle: "Savor the taste of culinary excellence in every bite.",
         bg: "/images/hero/slide4.jpg",
