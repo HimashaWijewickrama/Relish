@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #444;
-}
+@theme {
+  /* fonts */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair-display), serif;
 
-@theme inline {
+  /* colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-dark: var(--dark);
+  --color-light: var(--light);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +23,7 @@
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-sans);
 }
 
 h1,
@@ -29,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-playfair-display), serif;
+  font-family: var(--font-serif);
 }
 
 html {
@@ -42,7 +45,7 @@ html {
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-display font-bold text-dark mb-2;
+    @apply text-3xl md:text-4xl font-serif font-bold text-dark mb-2;
   }
 
   .section-subtitle {
