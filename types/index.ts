@@ -5,7 +5,7 @@ export interface MenuItem {
   description: string;
   price: string;
   image: string;
-  category: "starters" | "salads" | "specialty";
+  category: "starters" | "mains" | "specialty";
 }
 
 export interface Chef {
@@ -13,7 +13,7 @@ export interface Chef {
   name: string;
   role: string;
   image: string;
-  twitter?: string;
+  email?: string;
   instagram?: string;
   linkedin?: string;
 }
@@ -22,6 +22,7 @@ export interface Event {
   id: number;
   title: string;
   date: string;
+  time?: string;
   description: string;
   image: string;
   price: string;
@@ -32,7 +33,7 @@ export interface Testimonial {
   name: string;
   role: string;
   image: string;
-  quote: string;
+  feedback: string;
   stars: number;
 }
 
