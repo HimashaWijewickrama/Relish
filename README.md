@@ -9,17 +9,14 @@ A modern, responsive full-stack restaurant website developed using **Next.js 14 
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 [![React Icons](https://img.shields.io/badge/React%20Icons-latest-e91e63?style=flat-square&logo=react)](https://react-icons.github.io/react-icons/)
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com/)
-
 </div>
 
 ---
-
+<br><br>
 ## 📖 About The Project
 
 Relish is a fully responsive restaurant website built to showcase the beauty of modern web development with Next.js. It combines the performance of **Server Components** for static content with the interactivity of **Client Components** for dynamic features — delivering a fast, seamless experience across all devices. The site supports table reservations and contact form submissions handled entirely server-side via **Next.js Route Handlers**, with no third-party backend required.
-
----
-
+<br><br>
 ## ✨ Features
 
 - 🖼️ &nbsp;**Hero Image Slider** — Auto-advancing carousel with manual controls, dot indicators, and a YouTube video modal
@@ -35,9 +32,7 @@ Relish is a fully responsive restaurant website built to showcase the beauty of 
 - 📱 &nbsp;**Fully Responsive** — Mobile-first layout that looks great on every screen size
 - 🔤 &nbsp;**next/font** — Self-hosted Google Fonts (Inter + Playfair Display), zero layout shift
 - ⚡ &nbsp;**Server & Client Components** — Optimal rendering strategy applied per section
-
----
-
+<br><br>
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -51,8 +46,7 @@ Relish is a fully responsive restaurant website built to showcase the beauty of 
 | API | Next.js Route Handlers |
 | Deployment | Vercel |
 
----
-
+<br><br>
 ## 📁 Project Structure
 
 ```
@@ -86,9 +80,7 @@ restaurant-app/
 └── public/
     └── images/                 # Hero slides, menu, gallery, chef photos
 ```
-
----
-
+<br><br>
 ## 🗺️ Page Sections
 
 | Section | Component Type | Description |
@@ -104,8 +96,7 @@ restaurant-app/
 | Chefs | Server | Team profile cards with animated social media overlay |
 | Contact | Client | Location map and contact form handled by `/api/contact` |
 
----
-
+<br><br>
 ## ⚡ Server vs Client Components
 
 | Component | Type | Reason |
@@ -117,8 +108,7 @@ restaurant-app/
 | `Reservation`, `Contact` | Client | Controlled forms with `useState` and `fetch` to API routes |
 | `Gallery` | Client | Lightbox overlay managed with `useState` |
 
----
-
+<br><br>
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -141,9 +131,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
+<br><br>
 ## 📜 Available Scripts
 
 ```bash
@@ -152,42 +140,12 @@ npm run build    # Create production build
 npm run start    # Run production build locally
 npm run lint     # Run ESLint
 ```
-
----
-
+<br><br>
 ## 📐 Font Setup (`next/font`)
 
+Fonts are managed using **`next/font`** — Google Fonts (Inter & Playfair Display) are self-hosted automatically at build time, ensuring zero layout shift and no external network requests.
 Both fonts are self-hosted via `next/font/google` — no external network requests, no layout shift guaranteed.
-
-```ts
-// app/layout.tsx
-import { Inter, Playfair_Display } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair-display",
-  display: "swap",
-  weight: ["400", "600", "700"],
-});
-```
-
-Registered in `globals.css` via `@theme`:
-
-```css
-@theme {
-  --font-sans:  var(--font-inter), sans-serif;
-  --font-serif: var(--font-playfair-display), serif;
-}
-```
-
----
-
+<br><br>
 ## ☁️ Deployment
 
 The easiest way to deploy is with [Vercel](https://vercel.com/):
@@ -197,26 +155,18 @@ npx vercel --prod
 ```
 
 Or connect your GitHub repository to Vercel for zero-config automatic deployments on every push to `main`.
-
----
-
+<br><br>
 ## 📷 Snapshots
- 
-> The app is still cooking behind the scenes! But exciting views and features of **Relish** will be shared here soon... 🍳
- 
----
- 
+
+The app is still cooking behind the scenes! But exciting views and features of **Relish** will be shared here soon... 🍳
+<br><br>
 ## 🪄 What's Next?
  
 Some nice surprises may appear in future updates — stay tuned...! 😜
- 
----
-
+<br><br>
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
----
 
 <div align="center">
   <sub>Built with ❤️ using Next.js · TypeScript · Tailwind CSS v4 · React Icons</sub>
