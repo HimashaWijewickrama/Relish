@@ -155,22 +155,6 @@ npm run lint     # Run ESLint
 
 ---
 
-## 🔑 Environment Variables
-
-No environment variables are required to run locally.
-
-For production integrations (email delivery, database), create a `.env.local` file:
-
-```env
-# Email service (e.g. Resend or SendGrid)
-RESEND_API_KEY=your_key_here
-
-# Database (e.g. Prisma + PlanetScale)
-DATABASE_URL=your_database_url
-```
-
----
-
 ## 📐 Font Setup (`next/font`)
 
 Both fonts are self-hosted via `next/font/google` — no external network requests, no layout shift guaranteed.
@@ -214,6 +198,18 @@ npx vercel --prod
 
 Or connect your GitHub repository to Vercel for zero-config automatic deployments on every push to `main`.
 
+---
+
+## 📷 Snapshots
+ 
+> The app is still cooking behind the scenes! But exciting views and features of **Relish** will be shared here soon... 🍳
+ 
+---
+ 
+## 🪄 What's Next?
+ 
+Some nice surprises may appear in future updates — stay tuned...! 😜
+ 
 ---
 
 ## 📄 License
