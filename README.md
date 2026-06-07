@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍽️ Relish — Restaurant Website
+# 🍽️ Relish — Full-Stack Responsive Restaurant Website
 
 A modern, responsive full-stack restaurant website developed using **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS v4**. The website is designed to deliver a rich dining experience online — from browsing the menu and exploring upcoming events to booking a table and getting in touch — all through a visually polished, mobile-first interface and a well-structured architecture.
 
