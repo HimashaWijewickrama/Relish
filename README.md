@@ -10,8 +10,6 @@ A modern, responsive full-stack restaurant website developed using **Next.js 14 
 [![React Icons](https://img.shields.io/badge/React%20Icons-latest-e91e63?style=flat-square&logo=react)](https://react-icons.github.io/react-icons/)
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com/)
 
-[Live Demo](https://restaurant-website-khaki-six.vercel.app/) · [Report Bug](#) · [Request Feature](#)
-
 </div>
 
 ---
