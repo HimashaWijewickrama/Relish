@@ -1,11 +1,10 @@
 //sample data for the components (temporary, to be replaced with API data later)
-
-import { 
-    MenuItem, 
-    Chef, 
-    Event, 
-    Testimonial, 
-    Special 
+import {
+    MenuItem,
+    Chef,
+    Event,
+    Testimonial,
+    Special
 } from "@/types";
 
 export const menuItems: MenuItem[] = [
@@ -48,7 +47,16 @@ export const menuItems: MenuItem[] = [
         price: "LKR 1500",
         image: "/images/menu/veg-rice.jpg",
         category: "specialty",
+    },
+    {
+        id: 6,
+        name: "Vegetable Salad",
+        description: "A refreshing salad filled with a variety of fresh vegetables, mushrooms and a tangy vinaigrette.",
+        price: "LKR 800",
+        image: "/images/menu/veg-salad.jpg",
+        category: "starters",
     }
+
 ];
 
 export const chefs: Chef[] = [
@@ -147,3 +155,46 @@ export const heroSlides = [
         bg: "/images/hero/slide5.jpg",
     }
 ];
+
+export const gallery = [
+    {
+        id: 1,
+        image: "/images/gallery/gallery-1.jpg",
+        alt: "A beautifully plated dish of seared salmon with a vibrant sauce, garnished with fresh herbs and microgreens, showcasing the restaurant's commitment to culinary artistry and flavor."
+    },
+    {
+        id: 2,
+        image: "/images/gallery/gallery-2.jpg",
+        alt: "A cozy and inviting dining area with warm lighting, rustic wooden tables, and elegant decor, creating the perfect ambiance for a memorable dining experience at the restaurant."
+    },
+    {
+        id: 3,
+        image: "/images/gallery/gallery-3.jpg",
+        alt: "A close-up view of a delicious dessert with vibrant colors and intricate presentation, highlighting the artistry and creativity of the pastry chef."
+    },
+    {
+        id: 4,
+        image: "/images/gallery/gallery-4.jpg",
+        alt: "A lively scene of diners enjoying their meals in a bustling restaurant setting, capturing the vibrant atmosphere and social energy of the dining experience."
+    },
+    {
+        id: 5,
+        image: "/images/gallery/gallery-5.jpg",
+        alt: "A beautifully arranged charcuterie board featuring an assortment of cured meats, cheeses, fruits, and nuts, showcasing the restaurant's dedication to quality and presentation."
+    },
+    {
+        id: 6,
+        image: "/images/gallery/gallery-6.jpg",
+        alt: "A chef in action, skillfully preparing a dish in the open kitchen of the restaurant, demonstrating the passion and expertise that goes into every meal."
+    },
+    {
+        id: 7,
+        image: "/images/gallery/gallery-7.jpg",
+        alt: "A romantic table setting for two, adorned with candles and elegant tableware, creating an intimate and memorable dining experience at the restaurant."
+    },
+    {
+        id: 8,
+        image: "/images/gallery/gallery-8.jpg",
+        alt: "A vibrant and colorful cocktail being expertly crafted by a skilled bartender, showcasing the creativity and mixology expertise of the restaurant's bar team."
+    }
+]
