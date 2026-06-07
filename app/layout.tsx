@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { 
-  Geist, 
-  Geist_Mono, 
-  Inter, 
-  Playfair_Display 
+import {
+  Geist,
+  Geist_Mono,
+  Inter,
+  Playfair_Display
 } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; 
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 //body font - var(--font-inter)
@@ -35,13 +35,13 @@ const playfairDisplay = Playfair_Display({
 // });
 
 export const metadata: Metadata = {
-  title: "Relish",
+  title: "Relish | The Cuisine Restaurant",
   description: "Bringing People Together Through Food",
 };
 
 export default function RootLayout({
   children,
-}:{
+}: {
   children: React.ReactNode;
 }) {
   return (
