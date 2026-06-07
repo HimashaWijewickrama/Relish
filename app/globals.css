@@ -11,6 +11,7 @@
   --color-primary: var(--primary);
   --color-dark: var(--dark);
   --color-light: var(--light);
+  --color-secondary: var(--secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
     --foreground: #ededed;
     --primary: #FF8C42;
     --secondary: #FFA94D;
+    
   }
 }
 
@@ -43,7 +45,7 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-primary/80 transition-colors duration-300 inline-block;
+    @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-secondary transition-colors duration-300 inline-block;
   }
 
   .section-title {

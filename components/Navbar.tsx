@@ -56,8 +56,8 @@ export default function Navbar() {
         ${scrolled ? "bg-dark shadow-lg" : "bg-dark/80 backdrop-blur-sm"}`}
         >
             {/* top navbar */}
-            <div className="hidden md:flex justify-between items-center px-8 py-2
-                      text-gray-400 text-sm border-b border-white/10">
+            <div className="hidden md:flex justify-center items-center gap-8 px-8 py-2
+                text-gray-400 text-sm border-b border-white/10">
                 <div className="flex gap-6">
                     <span className="flex items-center gap-2">
                         <HiPhone className="text-primary" />
@@ -75,9 +75,9 @@ export default function Navbar() {
                             href={href}
                             aria-label={label}
                             className="w-7 h-7 rounded-full border border-white/20
-                    flex items-center justify-center text-gray-400
-                    hover:text-white hover:border-primary hover:bg-primary
-                    transition-all duration-300">
+                flex items-center justify-center text-gray-400
+                hover:text-white hover:border-primary hover:bg-primary
+                transition-all duration-300">
                             <Icon size={12} />
                         </a>
                     ))}
