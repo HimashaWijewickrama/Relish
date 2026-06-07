@@ -17,6 +17,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #FF8C42;
+    --secondary: #FFA94D;
   }
 }
 
@@ -41,7 +43,7 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-red-700 transition-colors duration-300 inline-block;
+    @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-primary/80 transition-colors duration-300 inline-block;
   }
 
   .section-title {
