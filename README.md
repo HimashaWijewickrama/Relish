@@ -159,6 +159,9 @@ Or connect your GitHub repository to Vercel for zero-config automatic deployment
 ## 📷 Snapshots
 
 The app is still cooking behind the scenes! But exciting views and features of **Relish** will be shared here soon... 🍳
+
+<img width="1920" height="1362" alt="screencapture-localhost-3000-2026-06-07-12_16_52" src="https://github.com/user-attachments/assets/e710cc65-bb73-4909-88b0-398efa33fd60" />
+
 <br><br>
 ## 🪄 What's Next?
  
