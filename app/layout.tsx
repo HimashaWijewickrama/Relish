@@ -7,7 +7,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar"; 
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 //body font - var(--font-inter)
 const inter = Inter({
@@ -52,7 +52,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
