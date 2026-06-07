@@ -117,7 +117,7 @@ export const testimonials: Testimonial[] = [
 export const heroSlides = [
     {
         id: 1,
-        title: "Welcome to Yammy Restaurant",
+        title: "Welcome to Relish",
         subtitle: "Delivering great food for more than 18 years!",
         bg: "/images/hero/slide1.jpg",
     },
