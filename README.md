@@ -78,7 +78,7 @@ restaurant-app/
 ├── types/
 │   └── index.ts                # TypeScript interfaces for all data models
 └── public/
-    └── images/                 # Hero slides, menu, gallery, chef photos
+    └── images/                 # Hero slides, menu, events, gallery, chef photos, testimonials and other
 ```
 <br><br>
 ## 🗺️ Page Sections
@@ -120,8 +120,7 @@ restaurant-app/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/restaurant-app.git
-cd restaurant-app
+https://github.com/HimashaWijewickrama/Relish.git
 
 # 2. Install dependencies
 npm install
