@@ -2,9 +2,9 @@ import Image from "next/image";
 import { FiCheckCircle } from "react-icons/fi";
 
 const bullets = [
-  "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Duis aute irure dolor in reprehenderit in voluptate velit.",
-  "Expertly crafted dishes using the finest local ingredients.",
+  "Seasonal, locally sourced ingredients.",
+  "A chef-driven menu blending tradition and innovation.",
+  "A warm, welcoming atmosphere for gatherings of any size.",
 ];
 
 export default function About() {
@@ -18,12 +18,12 @@ export default function About() {
           <div className="w-16 h-1 bg-primary mx-auto mt-4" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
-          <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden
-                          shadow-2xl">
+          <div className="relative h-76 md:h-[500px] rounded-2xl overflow-hidden
+                          shadow-4xl">
             <Image
-              src="/images/gallery/gallery-7.jpg"
+              src="/images/gallery/gallery-1.jpg"
               alt="About our restaurant"
               fill
               className="object-cover"
@@ -32,18 +32,15 @@ export default function About() {
 
           {/* Text */}
           <div>
-            <h3 className="font-display text-2xl font-semibold text-dark mb-4">
-              Voluptatem dignissimos provident quasi corporis voluptates
-              sit assumenda.
-            </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="text-gray-200 mb-6 leading-relaxed text-lg">
+              Founded with a passion for honest food and hospitality, we focus
+              on thoughtful dishes prepared with care and the best seasonal
+              produce.
             </p>
 
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-3 mb-6 text-lg">
               {bullets.map((b, i) => (
-                <li key={i} className="flex items-start gap-3 text-gray-600">
+                <li key={i} className="flex items-start gap-3 text-gray-400">
                   <FiCheckCircle
                     className="text-primary mt-0.5 shrink-0"
                     size={20}
@@ -53,11 +50,19 @@ export default function About() {
               ))}
             </ul>
 
-            <p className="text-gray-600 leading-relaxed">
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur.
+            <p className="text-gray-200 mb-12 text-lg">
+              Our team crafts every dish to highlight natural flavors and
+              create memorable moments—whether you're joining us for a casual
+              lunch or a special evening out.
             </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
+              <a href="#"
+                className="border-2 border-white text-white px-8 py-3 rounded
+                        font-semibold hover:bg-white/10 hover:text-white
+                        transition-colors duration-300">See More
+              </a>
+            </div>
           </div>
         </div>
       </div>
