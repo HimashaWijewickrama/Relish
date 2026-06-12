@@ -19,19 +19,19 @@ Relish is a fully responsive restaurant website built to showcase the beauty of 
 <br><br>
 ## ✨ Features
 
-- 🖼️ &nbsp;**Hero Image Slider** — Auto-advancing carousel with manual controls, dot indicators, and a YouTube video modal
-- 🍕 &nbsp;**Menu with Category Filter** — Tab-based filtering across Starters, Salads, and Specialty dishes
-- 📅 &nbsp;**Events Section** — Upcoming dining events displayed in a clean, responsive grid
-- 🌟 &nbsp;**Daily Specials** — Tabbed section showcasing the chef's featured dishes
-- 📷 &nbsp;**Gallery with Lightbox** — Click-to-enlarge photo grid with a smooth overlay experience
-- 👨‍🍳 &nbsp;**Meet the Chefs** — Team cards with animated social media hover overlays
-- 🗓️ &nbsp;**Table Reservation Form** — Full booking form with date, time, and guest selection backed by a Route Handler
-- 💬 &nbsp;**Testimonials Carousel** — Star-rated customer review slider
-- 📬 &nbsp;**Contact Form** — Server-side message handling via a dedicated API route
-- 📌 &nbsp;**Sticky Navbar** — Scroll-aware header with social icons, phone, hours, and a mobile hamburger menu
-- 📱 &nbsp;**Fully Responsive** — Mobile-first layout that looks great on every screen size
-- 🔤 &nbsp;**next/font** — Self-hosted Google Fonts (Inter + Playfair Display), zero layout shift
-- ⚡ &nbsp;**Server & Client Components** — Optimal rendering strategy applied per section
+- &nbsp;**Hero Image Slider** — Auto-advancing carousel with manual controls, dot indicators, and a YouTube video modal
+- &nbsp;**Menu with Category Filter** — Tab-based filtering across Starters, Salads, and Specialty dishes
+- &nbsp;**Events Section** — Upcoming dining events displayed in a clean, responsive grid
+- &nbsp;**Daily Specials** — Tabbed section showcasing the chef's featured dishes
+- &nbsp;**Gallery with Lightbox** — Click-to-enlarge photo grid with a smooth overlay experience
+- &nbsp;**Meet the Chefs** — Team cards with animated social media hover overlays
+- &nbsp;**Table Reservation Form** — Full booking form with date, time, and guest selection backed by a Route Handler
+- &nbsp;**Testimonials Carousel** — Star-rated customer review slider
+- &nbsp;**Contact Form** — Server-side message handling via a dedicated API route
+- &nbsp;**Sticky Navbar** — Scroll-aware header with social icons, phone, hours, and a mobile hamburger menu
+- &nbsp;**Fully Responsive** — Mobile-first layout that looks great on every screen size
+- &nbsp;**next/font** — Self-hosted Google Fonts (Inter + Playfair Display), zero layout shift
+- &nbsp;**Server & Client Components** — Optimal rendering strategy applied per section
 <br><br>
 ## 🛠️ Tech Stack
 
@@ -97,18 +97,7 @@ restaurant-app/
 | Contact | Client | Location map and contact form handled by `/api/contact` |
 
 <br><br>
-## ⚡ Server vs Client Components
 
-| Component | Type | Reason |
-|---|---|---|
-| `About`, `Events`, `Chefs`, `Footer` | Server | Pure display — no interactivity, zero JS sent to browser |
-| `Navbar` | Client | Needs `useState` for mobile menu + `useEffect` for scroll detection |
-| `Hero` | Client | Image slider uses `useState` + `useEffect` for auto-advance |
-| `Menu` | Client | Tab filter uses `useState` for active category |
-| `Reservation`, `Contact` | Client | Controlled forms with `useState` and `fetch` to API routes |
-| `Gallery` | Client | Lightbox overlay managed with `useState` |
-
-<br><br>
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -166,9 +155,6 @@ The app is still cooking behind the scenes! But exciting views and features of *
  
 Some nice surprises may appear in future updates — stay tuned...! 😜
 <br><br>
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
   <sub>Built with ❤️ using Next.js · TypeScript · Tailwind CSS v4 · React Icons</sub>
