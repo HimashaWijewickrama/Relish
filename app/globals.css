@@ -106,6 +106,97 @@ html {
   }
 }
 
+@keyframes driftSlow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) scale(1.04);
+  }
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseBorder {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(255, 140, 66, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 140, 66, 0.22);
+  }
+}
+
+@keyframes shimmerFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(4deg);
+  }
+}
+
+@keyframes driftOrb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(18px, -20px, 0) scale(1.08);
+  }
+}
+
+.floating-orb {
+  animation: driftOrb 10s ease-in-out infinite;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0) scale(0.98);
+  transition: opacity 0.7s ease, transform 0.7s ease, filter 0.7s ease;
+  filter: blur(8px);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.scroll-float-object {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0) scale(0.92);
+  transition: opacity 0.45s ease, transform 0.45s ease, filter 0.45s ease;
+  filter: blur(8px);
+}
+
+.scroll-float-object.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.scroll-float-object:not(.visible) {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scale(0.96);
+  filter: blur(8px);
+}
+
+.scroll-shape {
+  animation: shimmerFloat 8s ease-in-out infinite;
+}
+
 @layer components {
   .btn-primary {
     @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-secondary transition-colors duration-300 inline-block;
@@ -187,3 +278,47 @@ html {
 .special-menu-card .special-price {
   animation: floatPrice 3s ease-in-out infinite;
 }
+
+.reservation-visual {
+  animation: riseIn 0.8s ease both;
+}
+
+.reservation-form-wrap {
+  animation: riseIn 0.9s ease 0.1s both;
+}
+
+.reservation-visual,
+.reservation-form-wrap {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.reservation-visual:hover,
+.reservation-form-wrap:hover {
+  transform: translateY(-6px);
+}
+
+.reservation-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,140,66,0.12), transparent 50%, rgba(255,255,255,0.03));
+  animation: driftSlow 10s ease-in-out infinite;
+}
+
+.reservation-form-wrap {
+  animation: pulseBorder 4s ease-in-out infinite;
+}
+
+.reservation-form-wrap input,
+.reservation-form-wrap select,
+.reservation-form-wrap textarea,
+.reservation-form-wrap button {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reservation-form-wrap input:focus,
+.reservation-form-wrap select:focus,
+.reservation-form-wrap textarea:focus {
+  transform: translateY(-1px);
+}
+

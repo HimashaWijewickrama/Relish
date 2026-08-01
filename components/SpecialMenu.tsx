@@ -44,11 +44,19 @@ export default function SpecialMenu() {
           ))}
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {filteredItems.map((item) => (
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 xl:items-end">
+          {filteredItems.map((item, index) => {
+            const overlapClass =
+              index % 3 === 1
+                ? "md:-mt-10 md:ml-[-10px] xl:-mt-14"
+                : index % 3 === 2
+                  ? "md:-mt-16 md:ml-[-20px] xl:-mt-20"
+                  : "";
+
+            return (
             <article
               key={item.id}
-              className="special-menu-card group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#161616] shadow-[0_18px_50px_rgba(0,0,0,0.28)] transition-all duration-500 hover:border-[#ff8c42]/50 hover:shadow-[0_22px_60px_rgba(255,140,66,0.18)]"
+              className={`special-menu-card group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#161616] shadow-[0_18px_50px_rgba(0,0,0,0.28)] transition-all duration-500 hover:border-[#ff8c42]/50 hover:shadow-[0_22px_60px_rgba(255,140,66,0.18)] ${overlapClass}`}
             >
               <div className="special-badge absolute left-4 top-4 z-20 rounded-full border border-[#ff8c42]/30 bg-[#0d0d0d]/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#ffb27a]">
                 {item.category}
@@ -81,7 +89,8 @@ export default function SpecialMenu() {
                 </div>
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
