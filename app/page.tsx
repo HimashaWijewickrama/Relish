@@ -1,16 +1,15 @@
 import About from "@/components/about";
 import Hero from "@/components/hero";
-import News from "@/components/News";
+import SpecialMenu from "@/components/SpecialMenu";
 import Testimonials from "@/components/Testimonials";
-
 
 export default function Home() {
   return (
     <>
-    <Hero/>
-    <About/>
-    <Testimonials/>
-    {/* <News/> */}
+      <Hero />
+      <About />
+      <SpecialMenu />
+      <Testimonials />
     </>
   );
 }
