@@ -20,7 +20,6 @@
     --foreground: #ededed;
     --primary: #FF8C42;
     --secondary: #FFA94D;
-    
   }
 }
 
@@ -43,6 +42,70 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(255, 140, 66, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(255, 140, 66, 0.25);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-125%) skewX(-18deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(160%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+@keyframes floatPrice {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-secondary transition-colors duration-300 inline-block;
@@ -55,4 +118,72 @@ html {
   .section-subtitle {
     @apply text-primary uppercase tracking-widest text-sm font-semibold mb-3;
   }
+}
+
+.restaurant-404 {
+  background:
+    linear-gradient(135deg, rgba(14, 14, 14, 0.98), rgba(24, 18, 13, 0.98)),
+    #0b0b0b;
+}
+
+.plate-orbit {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+.floating-card {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+.restaurant-404 .absolute.inset-10.rounded-full,
+.restaurant-404 .absolute.inset-16.rounded-full {
+  animation: spin-slow 20s linear infinite;
+}
+
+.special-menu-section {
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.98), rgba(24, 24, 24, 0.98));
+}
+
+.special-menu-card {
+  animation: fadeUp 0.7s ease both;
+  transform-origin: center bottom;
+}
+
+.special-menu-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.special-menu-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.special-menu-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.special-menu-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.16) 50%, transparent 80%);
+  opacity: 0;
+  transform: translateX(-140%) skewX(-18deg);
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.special-menu-card:hover::before {
+  opacity: 1;
+  animation: sheen 0.9s ease forwards;
+}
+
+.special-menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.special-menu-card .special-badge {
+  animation: pulseGlow 2.8s ease-in-out infinite;
+}
+
+.special-menu-card .special-price {
+  animation: floatPrice 3s ease-in-out infinite;
 }

@@ -14,14 +14,14 @@ export const menuItems: MenuItem[] = [
         description: "Ramen noodles with soft boiled egg, shrimp and snow peas",
         price: "LKR 1200",
         image: "/images/menu/ramen.jpg",
-        category: "starters",
+        category: "mains",
     },
     {
         id: 2,
         name: "Sausage Pizza",
         description: "A delicious pizza topped with spicy sausage, bell peppers, and mozzarella cheese.",
         price: "LKR 2200",
-        image: "/images/menu/sausage-pizza.jpg",
+        image: "/images/menu/pizza.jpg",
         category: "specialty",
     },
     {
@@ -46,7 +46,7 @@ export const menuItems: MenuItem[] = [
         description: "A healthy bowl of steamed rice topped with a variety of fresh vegetables and a savory sauce.",
         price: "LKR 1500",
         image: "/images/menu/veg-rice.jpg",
-        category: "specialty",
+        category: "mains",
     },
     {
         id: 6,
