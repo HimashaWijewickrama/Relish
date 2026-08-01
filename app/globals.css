@@ -20,7 +20,6 @@
     --foreground: #ededed;
     --primary: #FF8C42;
     --secondary: #FFA94D;
-    
   }
 }
 
@@ -43,6 +42,25 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-secondary transition-colors duration-300 inline-block;
@@ -55,4 +73,23 @@ html {
   .section-subtitle {
     @apply text-primary uppercase tracking-widest text-sm font-semibold mb-3;
   }
+}
+
+.restaurant-404 {
+  background:
+    linear-gradient(135deg, rgba(14, 14, 14, 0.98), rgba(24, 18, 13, 0.98)),
+    #0b0b0b;
+}
+
+.plate-orbit {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+.floating-card {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+.restaurant-404 .absolute.inset-10.rounded-full,
+.restaurant-404 .absolute.inset-16.rounded-full {
+  animation: spin-slow 20s linear infinite;
 }
